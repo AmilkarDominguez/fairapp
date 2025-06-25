@@ -1,0 +1,7 @@
+{
+  "name": "fairapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
