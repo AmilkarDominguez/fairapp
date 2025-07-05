@@ -14,6 +14,7 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
     { title: 'Config', url: '/config', icon: 'settings' },
+    { title: 'Login', url: '/login', icon: 'person-circle' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

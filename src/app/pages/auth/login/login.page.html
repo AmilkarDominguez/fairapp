@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-text color="primary" class="ion-text-center ion-margin-top">
+    <div class="ion-align-items-center">
+      <div class="ion-margin-top">
+        <ion-img src="assets/shapes.svg"></ion-img>
+      </div>
+    </div>
+  </ion-text>
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post" class="ion-margin-top ion-padding">
+
+    <ion-input type="email" placeholder="📧 Correo" name="email"></ion-input>
+
+    <ion-input type="password" placeholder="🔑 Contraseña" name="password" class="ion-margin-top">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+
+    <ion-button type="submit" class="ion-margin-vertical ion-margin-horizontal" expand="full" shape="round"
+                color="primary" size="large">Ingresar
+    </ion-button>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-button color="light" fill="outline" (click)="openModal()">
+    <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+  </ion-button>
+</ion-footer>
