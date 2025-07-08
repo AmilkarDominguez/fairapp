@@ -1,8 +1,15 @@
-<ion-content [fullscreen]="true" class="ion-padding">
-    <ion-input placeholder="SERVER URL" [(ngModel)]="url"></ion-input>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input label="URL" placeholder="SERVER URL" [(ngModel)]="url"></ion-input>
+  </ion-item>
 </ion-content>
 <ion-footer>
     <ion-button class="ion-margin-vertical ion-margin-horizontal" expand="full" shape="round"
-                color="primary" size="large" (click)="confirm()">Acceptar
+                color="main" fill="outline" size="large" (click)="confirm()">Acceptar
     </ion-button>
 </ion-footer>
